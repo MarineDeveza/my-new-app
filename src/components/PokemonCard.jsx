@@ -1,13 +1,27 @@
-//import Bulbasaur from "./assets/components/bulbasaur.png"
+
+const pokemonList = [
+  {
+    name: "bulbasaur",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+  },
+  {
+    name: "mew",
+  },
+];
 
 function PokemonCard() {
-    return (<figure>
-    {<img src="./src/assets/bulbasaur.png"
-         alt="Bulbasaur"/>}
-    <figcaption>Bulbasaur</figcaption>
-</figure>)
+
+    return (
+      <div>
+      {pokemonList.map((pokemon) => (
+        <div key={pokemon.name}>{pokemon.name}
+        {pokemon.imgSrc ? <img src={pokemon.imgSrc} /> : <p>???</p>}
+        </div>
+      ))}
+    </div>
+  )
 }
 
-export default PokemonCard;
 
-// "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+export default PokemonCard;
