@@ -14,7 +14,7 @@ function App() {
       name: "mew",
     },
   ];
-
+console.log(pokemonList[0].imgSrc)
   return (
     <div className="App">
       <div>
