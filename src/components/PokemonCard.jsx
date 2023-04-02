@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 function PokemonCard({pokemon}) {
     return (
       <div>
-        {pokemon[0].name} 
-        <img src={pokemon[0].imgSrc} alt="photo" />
+        {/* {pokemon[0].name}  */}
+        {/* <img src={pokemon[0].imgSrc} alt="photo" /> */}
     </div>
   )
 }
